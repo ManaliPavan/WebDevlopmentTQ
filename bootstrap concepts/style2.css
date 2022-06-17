@@ -1,0 +1,76 @@
+﻿.banner img{
+    height:400px;
+}
+
+.content{
+    width:98%;
+}
+
+.card-img-top {
+    height: 250px;
+}
+.card{
+    width:100px;
+    height:390px;
+    margin:4px;
+    text-align:center;
+}
+
+.signin {
+    border: 2px solid white;
+    margin: 500px;
+    text-align: center;
+    width: 700px;
+    margin: 176px;
+    margin-left: 406px;
+}
+
+.footer{
+    background-color:black;
+    color:white;
+    height:350px;
+    
+}
+.footer a{
+    color:white;
+}
+
+/*media query for tab*/
+
+@media only screen and (min-device-width:768px) and (max-device-width:1020px) {
+    .form-control {
+        width: 70%;
+    }
+}
+
+/*media query for mobile*/
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+    .form-control {
+        width: 100%;
+    }
+    .signin {
+        width: 176px;
+        margin: 176px;
+        margin-left: 104px;
+    }
+    .footer {
+        top: 23px;
+        height: 204px;
+    }
+    .card {
+        width: 20%;
+        height: 200px;
+        margin: 4px;
+        text-align: center;
+    }
+    .col-md-3{
+        width:32%;
+    }
+    .row {
+        margin-right: 71px;
+    }
+    .col-md-3 .row{
+        width:20px;
+    }
+}

@@ -57,6 +57,11 @@ img {
     top: 26px;
 }
 
+table{
+    width:100%;
+    position:relative;
+}
+
 #p1 {
     position: absolute;
     top: 35px;
