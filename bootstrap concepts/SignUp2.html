@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="style2.css" rel="stylesheet" />
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sign In</title>
+    <title></title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <section class="website">
-        <i class="fa fa-shopping-bag" aria-hidden="true"></i><a class="navbar-brand" href="BootStrapDemo2.html"> HyperMall</a>
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i><a class="navbar-brand" href="#"> HyperMall</a>
 
     </section>
 
@@ -91,25 +91,59 @@
         </nav>
     </section>
 
+    <section class="signup">
+        <div class="signup-title" style="padding-bottom:30px; font-size:44px; font-weight:500; color:darkblue;">Sign Up</div>
+        <form class="row g-3" method="POST" action="SignIn2.html">
+            <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Email</span>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Password</span>
+                <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck" style="padding-right: 665px;">
+                        Rember Password
+                    </label>
+                </div>
 
-    <section class="signin">
-        <div class="signup-title" style="padding-bottom:30px; font-size:44px; font-weight:500; color:darkblue;">Sign In</div>
-        <form method="POST" action="BootStrapDemo2.html">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email ID</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Address 1</span>
+                <input type="text" class="form-control" placeholder="Address Line 1" aria-label="Address" aria-describedby="addon-wrapping">
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Rember Password</label>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Address 2</span>
+                <input type="text" class="form-control" placeholder="Address Line 2" aria-label="Address" aria-describedby="addon-wrapping">
             </div>
-            <button type="submit" class="btn btn-primary">Sign In</button>
-            <div><a href="#">Forgot Password?   </a> <a href="SignUp2.html">  New User? Sign UP</a>  </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">City</span>
+                <input type="text" class="form-control" placeholder="City" aria-label="City" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">State</span>
+                <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>Pune</option>
+                    <option>Mumbai</option>
+                    <option>Nashik</option>
+                </select>
+            </div>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Zip</span>
+                <input type="text" class="form-control" placeholder="Zip" aria-label="Zip" aria-describedby="addon-wrapping">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" style="background-color:darkblue;" href="SignIn2.html">Sign Up</button>
+            </div>
         </form>
     </section>
 
@@ -238,6 +272,6 @@
         </div>
 
     </footer>
+
 </body>
 </html>
-

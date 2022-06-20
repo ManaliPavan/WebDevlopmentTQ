@@ -1,5 +1,28 @@
-﻿.banner img{
+﻿.website{
+    height:100px;
+    background-color:darkblue;
+    width:100%;
+    font:bold 60px arial;
+    color:white;
+    padding-top:20px;
+}
+
+
+ .discount .card {
+        width: 21px;
+    }
+
+
+ .banner{
+     padding-bottom:50px;
+ }
+.discount .img-top{
     height:400px;
+}
+
+.banner img {
+    height: 400px;
+   
 }
 
 .content{
@@ -18,18 +41,38 @@
 
 .signin {
     border: 2px solid white;
-    margin: 500px;
     text-align: center;
     width: 700px;
-    margin: 176px;
+    margin: 120px;
     margin-left: 406px;
 }
 
-.footer{
-    background-color:black;
-    color:white;
-    height:350px;
-    
+.signup {
+    text-align: center;
+    border: 2px solid white;
+    margin: 98px 345px;
+}
+
+.contactus-body{
+    margin:60px;
+}
+
+
+.input-group-text {
+    background-color: darkblue;
+    color: white;
+}
+
+.offcanvas-body small {
+    bottom:100px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 300px;
+   padding-top:20px;
+   align-content:center;
 }
 .footer a{
     color:white;

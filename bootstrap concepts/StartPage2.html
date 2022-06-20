@@ -1,20 +1,21 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="style2.css" rel="stylesheet" />
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Sign In</title>
+
+    <title></title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <section class="website">
-        <i class="fa fa-shopping-bag" aria-hidden="true"></i><a class="navbar-brand" href="BootStrapDemo2.html"> HyperMall</a>
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i><a class="navbar-brand" href="#"> HyperMall</a>
 
     </section>
 
@@ -91,26 +92,87 @@
         </nav>
     </section>
 
+    <section class="banner">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="oss1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="oss2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="oss3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="oss4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
-    <section class="signin">
-        <div class="signup-title" style="padding-bottom:30px; font-size:44px; font-weight:500; color:darkblue;">Sign In</div>
-        <form method="POST" action="BootStrapDemo2.html">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email ID</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <div class="discount">
+                                    <div class="card" style="width: 45rem; height: 300px; margin-top: -6px;">
+                                        <img src="dp1.jpg" class="card-img-top" alt="...">
+                                        <h5 class="card-title" style="padding-top:10px; color:black;">current offers on mobiles..'</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <div class="discount">
+                                    <div class="card" style="width: 45rem; height: 350px;">
+                                        <img src="dp2.jpg" class="card-img-top" alt="..." style="height:300px;">
+                                        <h5 class="card-title" style="padding-top: 10px; color: black;"> Get 50% discount on toys..</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <div class="discount">
+                                    <div class="card" style="width: 45rem; height: 300px; margin-left: 23rem; margin-top: -6px;">
+                                        <img src="dp3.jpg" class="card-img-top" alt="...">
+                                        <h5 class="card-title" style="padding-top: 10px; color: black;">Discount 50% on bedsheets..</h5>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <div class="discount">
+                                    <div class="card" style="width: 45rem; height: 350px; margin-left: 23rem;">
+                                        <img src="dp4.jpg" class="card-img-top" alt="...">
+                                        <h5 class="card-title" style="padding-top: 10px; color: black;">Get Discount 10% on travel bags..<br />school bags,handbags</h5>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Rember Password</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign In</button>
-            <div><a href="#">Forgot Password?   </a> <a href="SignUp2.html">  New User? Sign UP</a>  </div>
-        </form>
+        </div>
+
     </section>
 
     <footer class="footer">
@@ -240,4 +302,3 @@
     </footer>
 </body>
 </html>
-
