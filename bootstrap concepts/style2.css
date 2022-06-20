@@ -1,13 +1,20 @@
-﻿.website{
-    height:100px;
-    background-color:darkblue;
-    width:100%;
-    font:bold 60px arial;
-    color:white;
-    padding-top:20px;
+﻿.website {
+    height: 100px;
+    background-color: darkblue;
+    width: 100%;
+    font: bold 60px arial;
+    color: white;
+    padding-top: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 
-
+.menu{
+    position:sticky;
+    top:100px;
+    z-index:2;
+}
  .discount .card {
         width: 21px;
     }

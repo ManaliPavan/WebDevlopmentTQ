@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        .button {
+            background-color: aquamarine;
+            border: none;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+    </style>
+    
+    <title></title>
+</head>
+<body>
+
+    <input class="button" type="button" value="Add First" onclick="addfirst()" />&ensp;
+    <input class="button" type="button" value="Add Last" onclick="addlast()" /><br /><br />
+    <input class="button" type="button" value="Remove First" onclick="removefirst()" />&ensp;
+    <input class="button" type="button" value="Remove Last" onclick="removelast()" /><br /><br />
+    &emsp;&emsp;&emsp;&emsp;  Enter Name:<input type="text" id="t1" />
+
+
+
+    <script>
+        var names = ["manali", "sonali", "kiran", "rani"];
+        function display() {
+            var data = "<ol>";
+            for (var i = 0; i < names.length; i++) {
+                data += "<li>" + names[i] + "</li>";
+            }
+            data += "</ol>";
+            document.getElementById("d1").innerHTML = data;
+        }
+
+        display();
+        function addlast() {
+            var name = document.getElementById("t1").value;
+            names.push(name);
+            display();
+        }
+        function addfirst() {
+            var name = document.getElementById("t1").value;
+            names.unshift(name);
+            display();
+        }
+        function removelast() {
+            var name = document.getElementById("t1").value;
+            names.pop(name);
+            display();
+        }
+        function removefirst() {
+            var name = document.getElementById("t1").value;
+            names.shift(name);
+            display();
+        }
+
+    </script>
+</body>
+</html>

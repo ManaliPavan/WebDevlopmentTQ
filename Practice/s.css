@@ -1,0 +1,13 @@
+﻿.header{
+    height:400px;
+    background-color:darkseagreen;
+    width:100%;
+    border-bottom:5px solid red;
+}
+
+.footer {
+    height: 400px;
+    background-color: darkgray;
+    width: 100%;
+    border-top: 5px solid red;
+}

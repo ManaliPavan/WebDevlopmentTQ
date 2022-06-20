@@ -103,6 +103,71 @@
         //document.getElementById("d1").innerHTML = names;
         document.getElementById("d2").innerHTML = list;
 
+        //Scope in JSP
+        //Global scope
+       // Function
+        //Block
+            //data types: Var, let, const
+        "use strict"    //we cant declare variable w/o data type(it makes usto follow rules of javascript)
+        // global scope
+        var a = 100;
+        const b = 20;
+
+        {
+            let a = 10;  // a is now block scope
+            var c = 200;  // c is a global scope
+            console.log(a);
+        }
+
+        var a = 300;
+        console.log(a);
+        // b = "Hello";
+        console.log(b);
+        function test() {
+            var name = "pune"; //funtion scope
+            let d = 400;  // function scope
+            console.log(b);
+        }
+
+
+        // call back function in javascript
+        // when you will receive data / response from the server, till you have to wait
+        //1. setTimeOut()  2. setInterval()
+
+        function display() {
+            document.getElementById("d1").innerHTML = "Hello to all";
+        }
+
+        //display();
+        setTimeout(display, 3000); // 3000ms -> 3sec
+
+        function showTime() {
+            let d = new Date();
+            data = d.getHours() + ": " + d.getMinutes() + ": " + d.getSeconds();
+            document.getElementById("d2").innerHTML = data;
+        }
+        //showTime();
+        setInterval(showTime, 5000);
+
+        /*
+        Modal dialog boxes in javascript
+        Alert - to display msg to the user
+        Confirm - to take confirmation from the user based on either yes / no -> exe the code
+        */
+
+        function display() {
+            //alert("Hello to all");
+            var result = confirm("Do you want to pay 500");
+            if (result == true) {
+                // exe code related to payment
+                alert("paid successfully");
+            }
+            else {
+                alert("Sorry ! you stopped the transaction");
+            }
+        }
+
+        display();
 
     </script>
 </body>
